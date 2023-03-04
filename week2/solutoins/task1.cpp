@@ -64,7 +64,7 @@ void initialize(Student &student)
         {
             student.favouriteSubject = Subject::DATABASES;
         }
-        else if (strcmp(favouriteSubject, "APIS") == 0)
+        else if (strcmp(favouriteSubject, "DAA") == 0)
         {
             student.favouriteSubject = Subject::DAA;
         }
@@ -185,7 +185,7 @@ void printSubject(Subject subject)
         std::cout << "Subject is Data bases!\n";
         break;
     case Subject::DAA:
-        std::cout << "Subject is Design and analyze of algorithms!\n";
+        std::cout << "Subject is Design and analysis of algorithms!\n";
         break;
     case Subject::DATASTRUCTURES:
         std::cout << "Subject is Data structures!\n";

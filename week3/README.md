@@ -12,7 +12,7 @@
 
 Да се напише функция, която по подадено име на файл и низ, принтира всички срещания на съответния низ във файла. Нека на стандартния изход се изведе на кой ред и коя дума подред се намира текущата дума във файла.
 
-## Задача 3 Взета от - https://github.com/FMI-SU-OOP-22-23/OOP-Practicum-Informatics-Group-6/tree/main/Week02-TextFiles/lab
+## Задача 3 Взета от [тук](https://github.com/FMI-SU-OOP-22-23/OOP-Practicum-Informatics-Group-6/tree/main/Week02-TextFiles/lab#%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0-3-eyessandwich)
 
 Реализирайте функция със следната сигнатура:
 

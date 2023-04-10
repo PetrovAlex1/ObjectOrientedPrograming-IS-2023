@@ -15,7 +15,7 @@ public:
 
 	Number(int number) : number(number) {}
 
-	void print()
+	void print() const
 	{
 		std::cout << num << std::endl;
 	}
@@ -52,11 +52,11 @@ class IntNumber
 {
 public:
 // Common Function
-	friend RationalNumber add(IntNumber& intNum, RationalNumber& rationalNum);
+	friend RationalNumber add(const IntNumber& intNum, const RationalNumber& rationalNum);
 
 	IntNumber(int number) : num(number) {}
 
-	void print()
+	void print() const
 	{
 		std::cout << num << std::endl;
 	}
@@ -69,7 +69,7 @@ class RationalNumber
 {
 public:
 // Common Function
-	friend RationalNumber add(IntNumber& intNum, RationalNumber& rationalNum);
+	friend RationalNumber add(const IntNumber& intNum, const  RationalNumber& rationalNum);
 
 	RationalNumber(int numerator, int denumerator)
 		: numerator(numerator), denominator(denumerator) {}
@@ -79,7 +79,7 @@ private:
 	int denominator;
 };
 
-RationalNumber add(IntNumber& intNum, RationalNumber& rationalNum)
+RationalNumber add(const IntNumber& intNum, const RationalNumber& rationalNum)
 {
 	int newNumerator = rationalNum.numerator + (intNum.num * rationalNum.denominator);
 	RationalNumber result(newNumerator, rationalNum.denominator);
